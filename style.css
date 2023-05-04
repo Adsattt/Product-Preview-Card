@@ -1,0 +1,128 @@
+/* CSS styling */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    margin: 8% auto;
+    width: 500px;
+    height: 450px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .left img {
+    width: 250px;
+    height: 450px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .right {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  h6 {
+    font-size: 18px;
+    color: rgb(70, 190, 130);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .dollars:before {
+    content: '$';
+  }
+  
+  .coret:before {
+    content: '$';
+  }
+  
+  .coret {
+    margin-left: 10px;
+    color: rgb(44, 46, 45);
+    text-decoration: line-through;
+  }
+  
+  .dollars {
+    color: rgb(70, 190, 130);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .right button {
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  
+  .right button:hover {
+    background-color: rgb(60, 160, 100);
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* For mobile devices */
+    .card {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .left img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0;
+    }
+  
+    .right {
+      width: 100%;
+      padding: 20px 10px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 15px;
+    }
+  
+    h6 {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    .right button {
+      width: 100%;
+    }
+  }
+  
